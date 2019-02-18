@@ -1,0 +1,71 @@
+﻿body {
+    background-image: url("../tp/8-m.jpg");/*背景图片*/
+    background-size: 100%; /*背景图片占满屏,请勿使用IE游览器,兼容性不好*/
+    background-repeat: no-repeat;/*背景图像将仅显示一次。*/
+}
+h3 {text-shadow:2px 2px #FF00FF;}/*设置标题阴影和阴影颜色*/
+#addtushu_frame {             /*模块框架,div框架*/
+    width: 400px;             /*宽度*/
+    height: 330px;             /*高度*/
+    padding: 13px;              /*内边距*/
+ 
+    position: absolute;         /*绝对定位*/
+    left: 50%;                
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+ 
+    background-color: rgba(240, 255, 255, 0.5);/*使得背景变得半通明*/
+ 
+    border-radius: 10px;/*为元素添加圆角边框*/
+    text-align: center;/*文本居中*/
+}
+ 
+form p > * {
+    display: inline-block;
+    vertical-align: middle;/*把此元素放置在父元素的中部*/
+}
+ 
+ 
+.label_input {      /*标签输入框样式*/
+    font-size: 14px;
+    font-family: 宋体;
+ 
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+ 
+    color:black;
+    background-color: #B0B0B0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+  
+.text_field {     /*文本输入地方样式*/
+    width: 278px;
+    height: 28px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+ 
+ 
+.button {     /*按钮输入地方样式*/
+    display: inline-block;
+    border-radius:40px;    /*按钮添加圆角边框*/
+    background-color: #f4511e;   /*按钮颜色*/
+    border: none;
+    color:#000000;      /*按钮的文字颜色*/
+    text-align: center;  /*文本居中*/
+
+    padding: 4px;         /*内边距*/
+    width:90px;
+    transition: all 0.5s; /*过渡时间*/
+    cursor:pointer; /*光标呈现为指示链接的指针（一只手）*/
+    margin: 5px;
+}
+.button:hover {      /*当鼠标在按钮上时的效果*/
+    background-color: #4CAF50; /* 按钮变为绿色 */
+    color: #0000FF; /*按钮文字变为蓝色*/
+}
